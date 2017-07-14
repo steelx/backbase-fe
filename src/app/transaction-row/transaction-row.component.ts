@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Transaction} from "../core/model/Transaction";
+import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'app-transaction-row',
@@ -8,7 +9,7 @@ import {Transaction} from "../core/model/Transaction";
 })
 export class TransactionRowComponent implements OnInit {
 
-  @Input() transactions: Transaction[];
+  @Input() $transactions: Observable<Transaction[]>;
   constructor() { }
 
   ngOnInit() {

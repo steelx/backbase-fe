@@ -1,6 +1,6 @@
-<ul>
+<ul *ngIf="$transactions | async as transactions else transactionsLoading">
   <li *ngFor="let log of transactions">
-    <span class="date">{{log.date | date}}</span>
+    <span class="date">{{log.date | date:'MMM d'}}</span>
     <span class="image"><img [src]="log.image"></span>
     <span>
       <strong>{{log.text}}</strong>
@@ -9,3 +9,9 @@
     <span class="amount">{{log.amount | currency}}</span>
   </li>
 </ul>
+
+<ng-template #transactionsLoading>
+  <div>
+    Loading...
+  </div>
+</ng-template>

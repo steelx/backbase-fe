@@ -8,6 +8,7 @@ import { HeadingComponent } from './heading/heading.component';
 import { MakeTransferComponent } from './make-transfer/make-transfer.component';
 import { RecentTransactionsComponent } from './recent-transactions/recent-transactions.component';
 import { TransactionRowComponent } from './transaction-row/transaction-row.component';
+import {TransactionService} from "./core/services/transaction.service";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { TransactionRowComponent } from './transaction-row/transaction-row.compo
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [TransactionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
