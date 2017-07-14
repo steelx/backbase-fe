@@ -1,12 +1,12 @@
 <ul *ngIf="$transactions | async as transactions else transactionsLoading">
-  <li *ngFor="let log of transactions">
-    <span class="date">{{log.date | date:'MMM d'}}</span>
-    <span class="image"><img [src]="log.image"></span>
+  <li *ngFor="let log of transactions" [style.backgroundColor]="categoryCode">
+    <span class="date">{{log.transactionDate | date:'MMM d'}}</span>
+    <span class="image"><img width="50" [src]="log.merchantLogo"></span>
     <span>
-      <strong>{{log.text}}</strong>
-      {{log.type}}
+      <strong>{{log.merchant}}</strong>
+      {{log.transactionType}}
     </span>
-    <span class="amount">{{log.amount | currency}}</span>
+    <span class="amount">{{log.amount | currency:'USD':true}}</span>
   </li>
 </ul>
 
