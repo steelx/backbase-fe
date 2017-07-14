@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeadingComponent } from './heading/heading.component';
 import { MakeTransferComponent } from './make-transfer/make-transfer.component';
 import { RecentTransactionsComponent } from './recent-transactions/recent-transactions.component';
+import { TransactionRowComponent } from './transaction-row/transaction-row.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeadingComponent,
     MakeTransferComponent,
-    RecentTransactionsComponent
+    RecentTransactionsComponent,
+    TransactionRowComponent
   ],
   imports: [
     BrowserModule,

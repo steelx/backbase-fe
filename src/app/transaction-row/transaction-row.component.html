@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let log of transactions">
+    <span class="date">{{log.date | date}}</span>
+    <span class="image"><img [src]="log.image"></span>
+    <span>
+      <strong>{{log.text}}</strong>
+      {{log.type}}
+    </span>
+    <span class="amount">{{log.amount | currency}}</span>
+  </li>
+</ul>
