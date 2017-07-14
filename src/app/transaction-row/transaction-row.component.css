@@ -1,0 +1,45 @@
+ul {
+    margin: 0 15px;
+}
+li {
+    display: table;
+    width: 100%;
+}
+li span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+ul li .bar {
+    width: 10px;
+}
+
+ul li .date {
+    text-align: center;
+}
+ul li .amount {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+ul li .transactionType {
+    text-align: left;
+}
+ul li .amount,
+ul li span p {
+    font-size: 18px;
+}
+ul li span p strong {
+    line-height:  22px;
+    display: block;
+    font-weight: 700;
+}
+
+ul li .amount,
+ul li .date,
+ul li .image {
+    width: 15%;
+}
