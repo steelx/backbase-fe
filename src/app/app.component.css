@@ -20,6 +20,6 @@ main app-make-transfer {
 }
 
 main app-recent-transactions {
-    -webkit-flex: 2 0 0;
-    flex: 2 0 0;
+    -webkit-flex: 3 0 0;
+    flex: 3 0 0;
 }
