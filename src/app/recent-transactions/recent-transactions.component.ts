@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Transaction} from "../core/model/Transaction";
+import {Observable} from "rxjs/Observable";
+import {TransactionService} from "../core/services/transaction.service";
 
 @Component({
   selector: 'app-recent-transactions',
@@ -7,9 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentTransactionsComponent implements OnInit {
 
-  constructor() { }
+  public $transactions: Observable<Transaction[]>;
+  constructor(private transactionService: TransactionService) { }
 
   ngOnInit() {
+    this.$transactions = this.transactionService.get();
   }
 
 }

@@ -1,0 +1,14 @@
+section {
+    background-color: #fff;
+    box-shadow: 0 0 5px #888888;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    display: block;
+    background-color: #13829f;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
