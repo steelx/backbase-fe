@@ -46,6 +46,9 @@ table {
 body, html {
     font-family: 'Open Sans Condensed', sans-serif;
     background-image: url('./assets/background.jpg');
+    height: 100%;
     -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
