@@ -1,5 +1,5 @@
 <section class="transactions-container">
-    <app-search-filter (onSearch)="handleSearch($event)"></app-search-filter>
+    <app-search-filter (onSearch)="handleSearch($event)" (onFilter)="handleSort($event)"></app-search-filter>
     <ul>
         <li *ngFor="let log of transactionsLog">
             <span class="bar" [style.backgroundColor]="log.categoryCode"></span>
