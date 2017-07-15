@@ -35,6 +35,8 @@ export class SearchFilterComponent implements OnInit {
       .subscribe((value) => {
         this.onSearch.emit(value);
       });
+
+    this.handleSort(1);
   }
 
   filter(val) {
