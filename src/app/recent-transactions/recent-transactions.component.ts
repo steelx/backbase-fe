@@ -17,4 +17,8 @@ export class RecentTransactionsComponent implements OnInit {
     this.$transactions = this.transactionService.get();
   }
 
+  handleSearch(searchTerm) {
+    console.log(searchTerm);
+  }
+
 }

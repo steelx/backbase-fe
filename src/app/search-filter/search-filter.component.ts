@@ -24,7 +24,6 @@ export class SearchFilterComponent implements OnInit {
         return Observable.of(search).delay(100);
       })
       .subscribe((value) => {
-        console.log(value);
         this.onSearch.emit(value);
       });
   }
