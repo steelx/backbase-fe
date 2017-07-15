@@ -1,5 +1,7 @@
 ul {
     margin: 0 15px;
+    border-top: 2px solid #CACACA;
+    border-right: 2px solid #CACACA;
 }
 li {
     display: table;
@@ -10,10 +12,12 @@ li span {
     vertical-align: middle;
     padding-bottom: 10px;
     padding-top: 10px;
+    border-bottom: 2px solid #CACACA;
 }
 
 ul li .bar {
     width: 10px;
+    border-bottom: none;
 }
 
 ul li .date {
@@ -30,10 +34,10 @@ ul li .transactionType {
 }
 ul li .amount,
 ul li span p {
-    font-size: 18px;
+    font-size: 16px;
 }
 ul li span p strong {
-    line-height:  22px;
+    line-height:  20px;
     display: block;
     font-weight: 700;
 }
@@ -41,5 +45,5 @@ ul li span p strong {
 ul li .amount,
 ul li .date,
 ul li .image {
-    width: 15%;
+    width: 12%;
 }

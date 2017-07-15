@@ -2,7 +2,7 @@
   <li *ngFor="let log of transactions">
     <span class="bar" [style.backgroundColor]="log.categoryCode"></span>
     <span class="date">{{log.transactionDate | date:'MMM d'}}</span>
-    <span class="image"><img width="50" [src]="log.merchantLogo"></span>
+    <span class="image"><img width="40" [src]="log.merchantLogo"></span>
     <span class="transactionType">
         <p>
             <strong>{{log.merchant}}</strong>
