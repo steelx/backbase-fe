@@ -1,0 +1,55 @@
+section.search-filter {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    min-height: 20px;
+}
+
+section.search-filter > div {
+    width: 100px;
+    margin: 15px;
+}
+section .search,
+section .filters {
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+}
+
+section .search input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CACACA;
+    padding: 5px 0;
+    text-indent: 10px;
+    outline: none;
+    margin: 0;
+}
+
+section .search input,
+section .filters i,
+section .filters span {
+    font-size: 20px;
+}
+
+section .filters {
+    overflow: hidden;
+}
+section .filters i,
+section .filters span {
+    display: block;
+    float: left;
+}
+section .filters span,
+section .filters i {
+    padding: 5px 24px;
+}
+section .filters span {
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #CACACA;
+    border-right: none;
+}
+section .filters span:last-child {
+    border-right: 1px solid #CACACA;
+}

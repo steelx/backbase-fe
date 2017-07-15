@@ -1,0 +1,11 @@
+<section class="search-filter">
+    <div class="search">
+        <input type="search" #searchInput (keyup)="keyUpSubject.next(searchInput.value)" placeholder="Search by typing.." />
+    </div>
+    <div class="filters">
+        <i>Sort by</i>
+        <span>Date</span>
+        <span>Beneficiaries</span>
+        <span>Amount</span>
+    </div>
+</section>
