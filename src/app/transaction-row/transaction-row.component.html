@@ -11,7 +11,7 @@
                     {{log.transactionType}}
                 </p>
             </span>
-            <span class="amount">{{log.amount | currency:'USD':true}}</span>
+            <span class="amount">{{log.amount | addMinus | currency:'USD':true}}</span>
         </li>
     </ul>
 </section>

@@ -10,6 +10,7 @@ import { RecentTransactionsComponent } from './recent-transactions/recent-transa
 import { TransactionRowComponent } from './transaction-row/transaction-row.component';
 import {TransactionService} from "./core/services/transaction.service";
 import { SearchFilterComponent } from './search-filter/search-filter.component';
+import { AddMinusPipe } from './core/filters/add-minus.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SearchFilterComponent } from './search-filter/search-filter.component';
     MakeTransferComponent,
     RecentTransactionsComponent,
     TransactionRowComponent,
-    SearchFilterComponent
+    SearchFilterComponent,
+    AddMinusPipe
   ],
   imports: [
     BrowserModule,
