@@ -9,10 +9,24 @@ import {Observable} from "rxjs/Observable";
 })
 export class TransactionRowComponent implements OnInit {
 
-  @Input() $transactions: Observable<Transaction[]>;
-  constructor() { }
+  public transactionsLog;
+  private transactionsBak;
+  @Input('transactions')
+  set transactions(value: Transaction[]) {
+    this.transactionsLog = this.transactionsBak = value;
+  }
+  constructor() {
+  }
 
   ngOnInit() {
+  }
+
+  handleSearch(term) {
+    this.transactionsLog = this.transactionsBak;
+    if (term.length === 0) {
+      return;
+    }
+    this.transactionsLog = this.transactionsLog.filter(obj => obj.merchant.toLowerCase().indexOf(term.toLowerCase()) !== -1);
   }
 
 }

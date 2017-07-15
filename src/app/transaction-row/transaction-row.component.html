@@ -1,22 +1,17 @@
 <section class="transactions-container">
-    <ul *ngIf="$transactions | async as transactions else transactionsLoading">
-        <li *ngFor="let log of transactions">
+    <app-search-filter (onSearch)="handleSearch($event)"></app-search-filter>
+    <ul>
+        <li *ngFor="let log of transactionsLog">
             <span class="bar" [style.backgroundColor]="log.categoryCode"></span>
             <span class="date">{{log.transactionDate | date:'MMM d'}}</span>
             <span class="image"><img width="40" [src]="log.merchantLogo"></span>
             <span class="transactionType">
-        <p>
-            <strong>{{log.merchant}}</strong>
-            {{log.transactionType}}
-        </p>
-    </span>
+                <p>
+                    <strong>{{log.merchant}}</strong>
+                    {{log.transactionType}}
+                </p>
+            </span>
             <span class="amount">{{log.amount | currency:'USD':true}}</span>
         </li>
     </ul>
-
-    <ng-template #transactionsLoading>
-        <div>
-            Loading...
-        </div>
-    </ng-template>
 </section>

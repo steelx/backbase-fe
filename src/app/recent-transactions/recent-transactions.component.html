@@ -1,5 +1,4 @@
 <section class="recent-transactions">
   <h3>Recent Transactions</h3>
-  <app-search-filter (onSearch)="handleSearch($event)"></app-search-filter>
-  <app-transaction-row [$transactions]="$transactions"></app-transaction-row>
+  <app-transaction-row [transactions]="$transactions | async"></app-transaction-row>
 </section>
