@@ -9,6 +9,7 @@ import { MakeTransferComponent } from './make-transfer/make-transfer.component';
 import { RecentTransactionsComponent } from './recent-transactions/recent-transactions.component';
 import { TransactionRowComponent } from './transaction-row/transaction-row.component';
 import {TransactionService} from "./core/services/transaction.service";
+import { SearchFilterComponent } from './search-filter/search-filter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {TransactionService} from "./core/services/transaction.service";
     HeadingComponent,
     MakeTransferComponent,
     RecentTransactionsComponent,
-    TransactionRowComponent
+    TransactionRowComponent,
+    SearchFilterComponent
   ],
   imports: [
     BrowserModule,

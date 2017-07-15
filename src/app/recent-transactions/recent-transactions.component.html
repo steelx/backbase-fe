@@ -1,9 +1,5 @@
 <section class="recent-transactions">
   <h3>Recent Transactions</h3>
-  <div class="search">
-    search
-  </div>
-  <div class="transactions-container">
-    <app-transaction-row [$transactions]="$transactions"></app-transaction-row>
-  </div>
+  <app-search-filter></app-search-filter>
+  <app-transaction-row [$transactions]="$transactions"></app-transaction-row>
 </section>
