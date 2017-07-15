@@ -1,6 +1,7 @@
 section {
     background-color: #fff;
     box-shadow: 0 0 10px #888888;
+    padding-bottom: 15px;
 }
 
 h3 {
@@ -10,4 +11,53 @@ h3 {
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
+    background: url('../../assets/icons/arrows.png') no-repeat #0C8397 15px 50%;
+}
+
+form {
+    margin: 20px 15px;
+    display: block;
+}
+form:after {
+    content: "";
+    display: table;
+    width:100%;
+    clear: both;
+}
+
+fieldset {
+    margin-bottom: 15px;
+}
+
+fieldset label {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    display: block;
+    margin: 5px 0;
+}
+
+fieldset input {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 5px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CACACA;
+    outline: none;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #EE7033;
+    border: none;
+    width: 70%;
+    float: right;
+    padding: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
 }
