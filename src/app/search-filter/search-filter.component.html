@@ -4,8 +4,8 @@
     </div>
     <div class="filters">
         <i>Sort by</i>
-        <span>Date</span>
-        <span>Beneficiaries</span>
-        <span>Amount</span>
+        <span #date (click)="filter(1)">Date</span>
+        <span #beneficiaries (click)="filter(2)">Beneficiaries</span>
+        <span #amount (click)="filter(3)">Amount</span>
     </div>
 </section>

@@ -49,7 +49,29 @@ section .filters span {
     text-align: center;
     border: 1px solid #CACACA;
     border-right: none;
+    position: relative;
 }
 section .filters span:last-child {
     border-right: 1px solid #CACACA;
+}
+.filters span.up:before,
+.filters span.down:before {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.filters span.up:before {
+    border-width: 0 5px 10px 5px;
+    border-color: transparent transparent #CACACA transparent;
+}
+
+.filters span.down:before {
+    border-width: 10px 5px 0 5px;
+    border-color: #CACACA transparent transparent transparent;
 }
